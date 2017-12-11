@@ -1,0 +1,205 @@
+\hypertarget{class_set}{}\section{Set$<$ T $>$ Class Template Reference}
+\label{class_set}\index{Set$<$ T $>$@{Set$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_set_ac57fb2ceddf11dad44bcd9329265580d}{Set} ()
+\item 
+\hyperlink{class_set_a97a93684c0b9e5a9921c58ce30aded1c}{Set} (int cap)
+\item 
+\hyperlink{class_set_aaa4abcf9b94524173e55b7301c7009f4}{$\sim$\+Set} ()
+\item 
+int \hyperlink{class_set_a242561b28705ae5b17e1b4e46e893af4}{get\+Capacity} ()
+\item 
+void \hyperlink{class_set_a94e652a0e9f9922c79762adb6eaf86c1}{set\+Capacity} (int w)
+\item 
+int \hyperlink{class_set_a3d2e0df73e2455964840fe5c668f3d81}{get\+Size} ()
+\item 
+T \hyperlink{class_set_a4989b0d383c94f67e33641b8b54ad7eb}{get\+Data} (int loc)
+\item 
+int \hyperlink{class_set_a06e2cc25660f6a4ff0d9b7af372f2a5e}{get\+Freq} (int loc)
+\item 
+bool \hyperlink{class_set_ae87a06144566865cc26a21e2ad96d214}{contains} (T target)
+\item 
+void \hyperlink{class_set_ac96d9574533e25b2689bae916badfcd8}{add\+Element} (T item)
+\item 
+int \hyperlink{class_set_a573c96681af42c868e736f1c503a2443}{find\+Item} (T item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_set_ac57fb2ceddf11dad44bcd9329265580d}\label{class_set_ac57fb2ceddf11dad44bcd9329265580d}} 
+\index{Set@{Set}!Set@{Set}}
+\index{Set@{Set}!Set@{Set}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_set}{Set}$<$ T $>$\+::\hyperlink{class_set}{Set} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. Initializes the set to default values. \mbox{\Hypertarget{class_set_a97a93684c0b9e5a9921c58ce30aded1c}\label{class_set_a97a93684c0b9e5a9921c58ce30aded1c}} 
+\index{Set@{Set}!Set@{Set}}
+\index{Set@{Set}!Set@{Set}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_set}{Set}$<$ T $>$\+::\hyperlink{class_set}{Set} (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+Constructor for a set that accepts an initial capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & capacity you wish to initialize the set with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_set_aaa4abcf9b94524173e55b7301c7009f4}\label{class_set_aaa4abcf9b94524173e55b7301c7009f4}} 
+\index{Set@{Set}!````~Set@{$\sim$\+Set}}
+\index{````~Set@{$\sim$\+Set}!Set@{Set}}
+\subsubsection{\texorpdfstring{$\sim$\+Set()}{~Set()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_set}{Set}$<$ T $>$\+::$\sim$\hyperlink{class_set}{Set} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for a set. Frees the necessary memory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_set_ac96d9574533e25b2689bae916badfcd8}\label{class_set_ac96d9574533e25b2689bae916badfcd8}} 
+\index{Set@{Set}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Set@{Set}}
+\subsubsection{\texorpdfstring{add\+Element()}{addElement()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{class_set}{Set}$<$ T $>$\+::add\+Element (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+This function adds an element to the set. Before adding the element it checks to see if it already exists. If it does exist then the item\+\_\+count for that element is updated. If it does not yet exist then the element is added and the item\+\_\+count for that element is initialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Element to be added to the set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_ae87a06144566865cc26a21e2ad96d214}\label{class_set_ae87a06144566865cc26a21e2ad96d214}} 
+\index{Set@{Set}!contains@{contains}}
+\index{contains@{contains}!Set@{Set}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_set}{Set}$<$ T $>$\+::contains (\begin{DoxyParamCaption}\item[{T}]{target }\end{DoxyParamCaption})}
+
+Function to test if an element already exists in the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Element to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the element already exists 
+
+false if the element does not exist in the set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a573c96681af42c868e736f1c503a2443}\label{class_set_a573c96681af42c868e736f1c503a2443}} 
+\index{Set@{Set}!find\+Item@{find\+Item}}
+\index{find\+Item@{find\+Item}!Set@{Set}}
+\subsubsection{\texorpdfstring{find\+Item()}{findItem()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \hyperlink{class_set}{Set}$<$ T $>$\+::find\+Item (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+This function finds the location of an item in the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & Item to find in the set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the item in the set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a242561b28705ae5b17e1b4e46e893af4}\label{class_set_a242561b28705ae5b17e1b4e46e893af4}} 
+\index{Set@{Set}!get\+Capacity@{get\+Capacity}}
+\index{get\+Capacity@{get\+Capacity}!Set@{Set}}
+\subsubsection{\texorpdfstring{get\+Capacity()}{getCapacity()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{class_set}{Set}$<$ T $>$\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns the total capacity of the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total capacity of the set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a4989b0d383c94f67e33641b8b54ad7eb}\label{class_set_a4989b0d383c94f67e33641b8b54ad7eb}} 
+\index{Set@{Set}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Set@{Set}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \hyperlink{class_set}{Set}$<$ T $>$\+::get\+Data (\begin{DoxyParamCaption}\item[{int}]{loc }\end{DoxyParamCaption})}
+
+This function returns the data at a specific location in the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em loc} & Location you wish to get the data at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data at that particular location in the set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a06e2cc25660f6a4ff0d9b7af372f2a5e}\label{class_set_a06e2cc25660f6a4ff0d9b7af372f2a5e}} 
+\index{Set@{Set}!get\+Freq@{get\+Freq}}
+\index{get\+Freq@{get\+Freq}!Set@{Set}}
+\subsubsection{\texorpdfstring{get\+Freq()}{getFreq()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{class_set}{Set}$<$ T $>$\+::get\+Freq (\begin{DoxyParamCaption}\item[{int}]{loc }\end{DoxyParamCaption})}
+
+This function returns the item\+\_\+counts at a specific location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em loc} & Location you wish to get the frequency for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+frequency of the item at the location you requested 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a3d2e0df73e2455964840fe5c668f3d81}\label{class_set_a3d2e0df73e2455964840fe5c668f3d81}} 
+\index{Set@{Set}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Set@{Set}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{class_set}{Set}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns the current amount of space in use by the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+current size in use by the set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_a94e652a0e9f9922c79762adb6eaf86c1}\label{class_set_a94e652a0e9f9922c79762adb6eaf86c1}} 
+\index{Set@{Set}!set\+Capacity@{set\+Capacity}}
+\index{set\+Capacity@{set\+Capacity}!Set@{Set}}
+\subsubsection{\texorpdfstring{set\+Capacity()}{setCapacity()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_set}{Set}$<$ T $>$\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+This function sets the total capacity of the set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & total capacity of the set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{set_8h}{set.\+h}\item 
+\hyperlink{set_8cpp}{set.\+cpp}\end{DoxyCompactItemize}

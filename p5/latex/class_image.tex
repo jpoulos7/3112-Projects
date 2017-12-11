@@ -1,0 +1,383 @@
+\hypertarget{class_image}{}\section{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()
+\item 
+\hyperlink{class_image_af2d2b2b46060ce7d4dda966d1bb29b45}{Image} (string input\+\_\+file)
+\item 
+\hyperlink{class_image_afb0339b802ed560e69eb07358d30198f}{Image} (int width, int height)
+\item 
+\hyperlink{class_image_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image} ()
+\item 
+int \hyperlink{class_image_af2720a072812763395512fc3c8c21362}{get\+Width} ()
+\item 
+void \hyperlink{class_image_a385abd0ecca8787fe15d9a72ac60001a}{set\+Width} (int w)
+\item 
+int \hyperlink{class_image_aa4e1f064e5e1f3f04ad605408f1ec3af}{get\+Height} ()
+\item 
+void \hyperlink{class_image_a6e15783dcc55c301f4e887e27a7c38be}{set\+Height} (int h)
+\item 
+int \hyperlink{class_image_a4fc6fccb6a5cdb33dd2ee14d6d785075}{get\+Max\+Pixel} ()
+\item 
+void \hyperlink{class_image_a726a71590bc574158cb5d4994c4b12d1}{set\+Max\+Pixel} (int m)
+\item 
+void \hyperlink{class_image_a06bf6921136ef94ef30a788dbf609ce9}{get\+Image\+Pixel} (int col, int row, int $\ast$pixel)
+\item 
+void \hyperlink{class_image_a44556ed55401215428fbaae43256315c}{set\+Image\+Pixel} (int col, int row, int $\ast$pixel)
+\item 
+void \hyperlink{class_image_afd7841c2016dc76156a43cc4cd348680}{read} (string infile)
+\item 
+void \hyperlink{class_image_addd74434babf60a45c1d7b9fc155723a}{write} (string outfile)
+\item 
+void \hyperlink{class_image_a50edfdcc8b618d34496d035cfd1cad28}{make\+Set} ()
+\item 
+void \hyperlink{class_image_aeb66578047d02ea0d9a91d804a08b61e}{write\+Set} (\hyperlink{class_set}{Set}$<$ int $>$ red, \hyperlink{class_set}{Set}$<$ int $>$ green, \hyperlink{class_set}{Set}$<$ int $>$ blue)
+\item 
+void \hyperlink{class_image_a0a529f80b6de38ee9313aeea4c937983}{common\+Pixels} (int threshold)
+\item 
+void \hyperlink{class_image_ad6a65050729083c4e64c2a1cb4f5ee41}{to\+Grayscale} ()
+\item 
+void \hyperlink{class_image_a82d860b94ad3e5250fb077e063ce3fa6}{flip\+Horizontal} ()
+\item 
+void \hyperlink{class_image_a47f12bc0bd85a51e20cd12a514a9411a}{negate\+Blue} ()
+\item 
+void \hyperlink{class_image_a95fc031a2d406d17d6b4dadff743cf7c}{flatten\+Red} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_image_a58edd1c45b4faeb5f789b0d036d02313}\label{class_image_a58edd1c45b4faeb5f789b0d036d02313}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor for an \hyperlink{class_image}{Image} object \mbox{\Hypertarget{class_image_af2d2b2b46060ce7d4dda966d1bb29b45}\label{class_image_af2d2b2b46060ce7d4dda966d1bb29b45}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{string}]{input\+\_\+file }\end{DoxyParamCaption})}
+
+Constructor used when a ppm input file is given. This calls the read function which creates an image object by reading in the input file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+file} & String with the name of the input file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_image_afb0339b802ed560e69eb07358d30198f}\label{class_image_afb0339b802ed560e69eb07358d30198f}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Constructor for an empty image object with given height and width.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the image object \\
+\hline
+{\em height} & Height of the image object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_image_a0294f63700543e11c0f0da85601c7ae5}\label{class_image_a0294f63700543e11c0f0da85601c7ae5}} 
+\index{Image@{Image}!````~Image@{$\sim$\+Image}}
+\index{````~Image@{$\sim$\+Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{$\sim$\+Image()}{~Image()}}
+{\footnotesize\ttfamily Image\+::$\sim$\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for the image object. Checks to make sure that the 2d array has been allocated. If it has been allocated then it is freed from memory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_a0a529f80b6de38ee9313aeea4c937983}\label{class_image_a0a529f80b6de38ee9313aeea4c937983}} 
+\index{Image@{Image}!common\+Pixels@{common\+Pixels}}
+\index{common\+Pixels@{common\+Pixels}!Image@{Image}}
+\subsubsection{\texorpdfstring{common\+Pixels()}{commonPixels()}}
+{\footnotesize\ttfamily void Image\+::common\+Pixels (\begin{DoxyParamCaption}\item[{int}]{threshold }\end{DoxyParamCaption})}
+
+This function changes any pixels that occur more than a certain number of times to white. This number is given by the threshold.
+
+
+\begin{DoxyParams}{Parameters}
+{\em threshold} & The number of times a pixel must occur in the image in order to be turned white \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a95fc031a2d406d17d6b4dadff743cf7c}\label{class_image_a95fc031a2d406d17d6b4dadff743cf7c}} 
+\index{Image@{Image}!flatten\+Red@{flatten\+Red}}
+\index{flatten\+Red@{flatten\+Red}!Image@{Image}}
+\subsubsection{\texorpdfstring{flatten\+Red()}{flattenRed()}}
+{\footnotesize\ttfamily void Image\+::flatten\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This funciton sets all the red pixel values to 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a82d860b94ad3e5250fb077e063ce3fa6}\label{class_image_a82d860b94ad3e5250fb077e063ce3fa6}} 
+\index{Image@{Image}!flip\+Horizontal@{flip\+Horizontal}}
+\index{flip\+Horizontal@{flip\+Horizontal}!Image@{Image}}
+\subsubsection{\texorpdfstring{flip\+Horizontal()}{flipHorizontal()}}
+{\footnotesize\ttfamily void Image\+::flip\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This funciton flips the image horizontally.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_aa4e1f064e5e1f3f04ad605408f1ec3af}\label{class_image_aa4e1f064e5e1f3f04ad605408f1ec3af}} 
+\index{Image@{Image}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Image\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the height of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+height The height of the \hyperlink{class_image}{Image} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a06bf6921136ef94ef30a788dbf609ce9}\label{class_image_a06bf6921136ef94ef30a788dbf609ce9}} 
+\index{Image@{Image}!get\+Image\+Pixel@{get\+Image\+Pixel}}
+\index{get\+Image\+Pixel@{get\+Image\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Image\+Pixel()}{getImagePixel()}}
+{\footnotesize\ttfamily void Image\+::get\+Image\+Pixel (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row,  }\item[{int $\ast$}]{pixel }\end{DoxyParamCaption})}
+
+Function that returns the R\+GB pixel value at a given point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Column of the pixel you want \\
+\hline
+{\em row} & Row of the pixel you want \\
+\hline
+{\em $\ast$pixel} & Pointer to a 3 element array that holds the R\+GB triple \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a4fc6fccb6a5cdb33dd2ee14d6d785075}\label{class_image_a4fc6fccb6a5cdb33dd2ee14d6d785075}} 
+\index{Image@{Image}!get\+Max\+Pixel@{get\+Max\+Pixel}}
+\index{get\+Max\+Pixel@{get\+Max\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Max\+Pixel()}{getMaxPixel()}}
+{\footnotesize\ttfamily int Image\+::get\+Max\+Pixel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the max pixe value of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+max\+Pixel The max pixel value of the \hyperlink{class_image}{Image} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_af2720a072812763395512fc3c8c21362}\label{class_image_af2720a072812763395512fc3c8c21362}} 
+\index{Image@{Image}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Image\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the width of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+width The width of the \hyperlink{class_image}{Image} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a50edfdcc8b618d34496d035cfd1cad28}\label{class_image_a50edfdcc8b618d34496d035cfd1cad28}} 
+\index{Image@{Image}!make\+Set@{make\+Set}}
+\index{make\+Set@{make\+Set}!Image@{Image}}
+\subsubsection{\texorpdfstring{make\+Set()}{makeSet()}}
+{\footnotesize\ttfamily void Image\+::make\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function takes the image object and creates a set using its data. The set tracks the frequency of each red, green, and blue value. As well as the frequency of all the pixels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a47f12bc0bd85a51e20cd12a514a9411a}\label{class_image_a47f12bc0bd85a51e20cd12a514a9411a}} 
+\index{Image@{Image}!negate\+Blue@{negate\+Blue}}
+\index{negate\+Blue@{negate\+Blue}!Image@{Image}}
+\subsubsection{\texorpdfstring{negate\+Blue()}{negateBlue()}}
+{\footnotesize\ttfamily void Image\+::negate\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function flips each blue pixel in the image about the max pixel value. ex. Assume the max pixel value is 255 If the blue were 0, it would become 255; if it were 255 it would become 0. If the blue were 100, it would become 155.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_afd7841c2016dc76156a43cc4cd348680}\label{class_image_afd7841c2016dc76156a43cc4cd348680}} 
+\index{Image@{Image}!read@{read}}
+\index{read@{read}!Image@{Image}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Image\+::read (\begin{DoxyParamCaption}\item[{string}]{infile }\end{DoxyParamCaption})}
+
+This function reads the ppm image given by the infile parameter. It reads the ppm image into a dynamically allocted 2d array called image\+\_\+array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em infile} & String with the name of the input file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a6e15783dcc55c301f4e887e27a7c38be}\label{class_image_a6e15783dcc55c301f4e887e27a7c38be}} 
+\index{Image@{Image}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void Image\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+Sets the height of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Height of the object that you would like to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a44556ed55401215428fbaae43256315c}\label{class_image_a44556ed55401215428fbaae43256315c}} 
+\index{Image@{Image}!set\+Image\+Pixel@{set\+Image\+Pixel}}
+\index{set\+Image\+Pixel@{set\+Image\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Image\+Pixel()}{setImagePixel()}}
+{\footnotesize\ttfamily void Image\+::set\+Image\+Pixel (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row,  }\item[{int $\ast$}]{pixel }\end{DoxyParamCaption})}
+
+Function that sets the R\+GB pixel value at a given point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Column of the pixel you want \\
+\hline
+{\em row} & Row of the pixel you want \\
+\hline
+{\em $\ast$pixel} & Pointer to a 3 element array that holds the R\+GB triple \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a726a71590bc574158cb5d4994c4b12d1}\label{class_image_a726a71590bc574158cb5d4994c4b12d1}} 
+\index{Image@{Image}!set\+Max\+Pixel@{set\+Max\+Pixel}}
+\index{set\+Max\+Pixel@{set\+Max\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Max\+Pixel()}{setMaxPixel()}}
+{\footnotesize\ttfamily void Image\+::set\+Max\+Pixel (\begin{DoxyParamCaption}\item[{int}]{m }\end{DoxyParamCaption})}
+
+Sets the max pixel value of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Max pixel value of image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_a385abd0ecca8787fe15d9a72ac60001a}\label{class_image_a385abd0ecca8787fe15d9a72ac60001a}} 
+\index{Image@{Image}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void Image\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+Sets the width of the \hyperlink{class_image}{Image} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Width of the object that you would like to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_ad6a65050729083c4e64c2a1cb4f5ee41}\label{class_image_ad6a65050729083c4e64c2a1cb4f5ee41}} 
+\index{Image@{Image}!to\+Grayscale@{to\+Grayscale}}
+\index{to\+Grayscale@{to\+Grayscale}!Image@{Image}}
+\subsubsection{\texorpdfstring{to\+Grayscale()}{toGrayscale()}}
+{\footnotesize\ttfamily void Image\+::to\+Grayscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function converts the image to grayscale using the formula R$\ast$0.299+\+G$\ast$0.587+\+B$\ast$0.114.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_addd74434babf60a45c1d7b9fc155723a}\label{class_image_addd74434babf60a45c1d7b9fc155723a}} 
+\index{Image@{Image}!write@{write}}
+\index{write@{write}!Image@{Image}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Image\+::write (\begin{DoxyParamCaption}\item[{string}]{outfile }\end{DoxyParamCaption})}
+
+This function writes the current object out to a given file. If the filename can be given with our without an extension. The function will remove any file extensions and force the output file to be .ppm
+
+
+\begin{DoxyParams}{Parameters}
+{\em outfile} & String with the name of the output file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_aeb66578047d02ea0d9a91d804a08b61e}\label{class_image_aeb66578047d02ea0d9a91d804a08b61e}} 
+\index{Image@{Image}!write\+Set@{write\+Set}}
+\index{write\+Set@{write\+Set}!Image@{Image}}
+\subsubsection{\texorpdfstring{write\+Set()}{writeSet()}}
+{\footnotesize\ttfamily void Image\+::write\+Set (\begin{DoxyParamCaption}\item[{\hyperlink{class_set}{Set}$<$ int $>$}]{red,  }\item[{\hyperlink{class_set}{Set}$<$ int $>$}]{green,  }\item[{\hyperlink{class_set}{Set}$<$ int $>$}]{blue }\end{DoxyParamCaption})}
+
+This function creates the R\+GB text files for the image object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & \hyperlink{class_set}{Set} containing the red values and their frequencies \\
+\hline
+{\em green} & \hyperlink{class_set}{Set} containing the green values and their frequencies \\
+\hline
+{\em blue} & \hyperlink{class_set}{Set} containing the blue values and their frequencies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{image_8h}{image.\+h}\item 
+\hyperlink{image_8cpp}{image.\+cpp}\end{DoxyCompactItemize}
